@@ -1,0 +1,121 @@
+/* 基本レイアウト */
+html {
+    font-size: 16px; 
+  }
+/* header */
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #546E7A;
+}
+
+/* main */
+.container {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+  
+.word-card {
+    border: 1px solid #ccc; 
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #bdd1d9;
+}
+  
+.pronunciation {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #19272e;
+}
+  
+.meaning {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #546E7A;
+}
+  
+.input-group {
+    display: flex;
+    gap: 5px;
+    position: relative;
+}
+  
+.input-wrapper {
+    position: relative;
+    flex: 1;
+}
+  
+input[type="text"] {
+    font-size: 1.4em;
+    padding: 10px; /* 入力欄の大きさ */ 
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF; /* 入力欄外枠・指定ないと黒 */
+    border-radius: 5px;
+}
+  
+input[type="text"]:focus {
+    outline: none; /* デフォルトのフォーカス時の枠線を消す */
+    border: 2px solid #5F9EA0;  /* 好きな色を指定 */
+    box-shadow: 0 0 5px #5F9EA0; /* 任意: フォーカス時のグロー効果 */
+}
+  
+button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+  
+.check-btn {
+    background-color: #648290; /* 確認ボタン */
+    color: white;
+    border: 1px solid #648290;
+}
+  
+.check-btn:hover {
+    color: #293237;
+    background-color: #c6f3c9;
+    border: 1px solid #293237;
+}
+  
+  .reset-btn {
+    background-color: #e7c69a;
+    color: white;
+    border: 1px solid #e7c69a;
+}
+  
+  .reset-btn:hover {
+    background-color: white;
+    color: #d19e5b;
+}
+  
+  .correct-mark {
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 20px;
+}
+  
+  .correct-answer {
+    color: red;
+    font-weight: bold;
+}
+  
+  input[type="text"]:disabled {
+    background-color: #fff;
+}
+
+  
+
+  
+
+  
+  
